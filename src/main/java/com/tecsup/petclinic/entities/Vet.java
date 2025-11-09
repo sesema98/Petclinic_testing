@@ -2,7 +2,9 @@ package com.tecsup.petclinic.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import java.util.Set;
 
@@ -32,6 +34,8 @@ public class Vet {
 			joinColumns = @JoinColumn(name = "vet_id"),
 			inverseJoinColumns = @JoinColumn(name = "specialty_id")
 	)
+	@ToString.Exclude
+	@EqualsAndHashCode.Exclude
 	private Set<Specialty> specialties;
 
 }

@@ -1,5 +1,6 @@
 package com.tecsup.petclinic.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -27,6 +28,7 @@ public class Specialty {
 
 	@ManyToMany(mappedBy = "specialties", fetch = FetchType.LAZY)
 	@ToString.Exclude
-	//@EqualsAndHashCode.Exclude
+	@EqualsAndHashCode.Exclude
+	@JsonIgnore
 	private Set<Vet> vets;
 }

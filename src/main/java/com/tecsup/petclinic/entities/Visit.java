@@ -2,6 +2,7 @@ package com.tecsup.petclinic.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
@@ -29,6 +30,7 @@ public class Visit {
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "pet_id")
-	//@ToString.Exclude
+	@ToString.Exclude
+	@EqualsAndHashCode.Exclude
 	private Pet pet;
 }

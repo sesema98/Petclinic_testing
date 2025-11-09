@@ -1,5 +1,7 @@
 package com.tecsup.petclinic.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -18,6 +20,7 @@ import java.util.Set;
 @NoArgsConstructor
 @Entity(name = "pets")
 @Data
+@JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
 public class Pet {
 
 	@Id
@@ -40,7 +43,8 @@ public class Pet {
 
 	@OneToMany(mappedBy = "pet", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	@ToString.Exclude
-	//@EqualsAndHashCode.Exclude
+	@EqualsAndHashCode.Exclude
+	@JsonIgnore
 	private Set<Visit> visits;
 
 //	@ManyToOne(fetch = FetchType.LAZY)
