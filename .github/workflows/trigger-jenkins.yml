@@ -13,7 +13,8 @@ jobs:
 
     steps:
       - name: Debug URL (temporary)
-        run: echo "URL is: ${{ secrets.JENKINS_URL }}/job/Petclinic_testing/build"
+        run: |
+          echo "URL is: ${{ secrets.JENKINS_URL }}/job/Petclinic_testing/build"
 
       - name: Trigger Jenkins Job
         run: |
