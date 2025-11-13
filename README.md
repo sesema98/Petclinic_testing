@@ -197,3 +197,5 @@ Todas las pruebas de integración con MockMvc cargan `schema.sql` + `data.sql`, 
 4. Commit con mensajes claros, push y abrir PR con evidencias (logs/capturas) según lo solicitado.
 
 ¡Felices pruebas! 🐾
+
+PRUEBA JENKINS
