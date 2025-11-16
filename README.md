@@ -1,4 +1,6 @@
-# Proyecto PetClinic Integration Test
+# La integracion completa con gitactions se encuentra en esta ruta https://github.com/sesema98/petclinic_gitactions
+
+# Proyecto PetClinic Integration Test con AWS y desplegado desde gitactions
 
 Implementación en Spring Boot 3.5.6 / Java 17 del clásico dominio PetClinic, adaptado para laboratorios de pruebas de integración. Expone endpoints REST de CRUD para las principales entidades (Pet, Owner, Vet, Specialty, Visit, PetType) y muestra cómo conectar servicios, repositorios, DTOs, mapeadores con MapStruct y scripts de base de datos, manteniendo una alta cobertura con MockMvc, Rest-Assured y JaCoCo.
 
