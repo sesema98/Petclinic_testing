@@ -1,4 +1,6 @@
-# La integracion completa con gitactions se encuentra en esta ruta https://github.com/sesema98/petclinic_gitactions
+## Integración CI/CD con GitHub Actions
+La integración completa con GitHub Actions se encuentra en el siguiente repositorio:  
+🔗 https://github.com/sesema98/petclinic_gitactions
 
 # Proyecto PetClinic Integration Test con AWS y desplegado desde gitactions
 
